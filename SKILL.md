@@ -43,14 +43,11 @@ Ask one question if it isn't obvious: "Do you use Claude in the browser or deskt
 
 ## Step 2A: Claude.ai web or desktop app
 
-Give the person these steps:
+Give the person exactly these three steps, nothing more:
 
-1. Open **Settings** → **Connectors**.
-2. Click **Add custom connector**.
-3. Name: `BonBook Travel`. URL: `https://mcp.bonbook.co/mcp`. Leave every other field empty.
-4. Click **Add**, then **Connect**.
-5. A BonBook page opens. Click **Continue**.
-6. Back in Claude, start a **new chat** and make sure the BonBook Travel connector is toggled on (paperclip or tools menu).
+1. Open **Settings → Connectors → Add custom connector**. Paste `https://mcp.bonbook.co/mcp` and click **Add**.
+2. Click **Connect**, then **Continue** on the BonBook page.
+3. Start a new chat and type where you want to go.
 
 Then go to **Step 3**.
 

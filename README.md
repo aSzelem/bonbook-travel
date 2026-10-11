@@ -1,22 +1,33 @@
 # BonBook Travel for Claude
 
-Search and book flights by chatting with Claude, through BonBook, a licensed travel agency.
+Book flights by chatting with Claude. BonBook is a licensed travel agency.
 
-**Connector URL:** `https://mcp.bonbook.co/mcp`
+## Set up in 3 steps
 
-## Set it up
+1. In Claude, open **Settings → Connectors → Add custom connector**. Paste `https://mcp.bonbook.co/mcp` and click **Add**.
+2. Click **Connect**, then **Continue** on the BonBook page.
+3. Start a new chat and type where you want to go.
 
-Point Claude at [SKILL.md](SKILL.md) and say **"set up BonBook Travel for me."** Claude walks you through connecting
-it in Claude.ai, Claude Desktop, Claude Code or any other MCP client, verifies it works, and shows you how to use it.
+No account, no password, no card. Your first booking opens a bonbook.co checkout page; after that you book by saying "book option 2."
 
-Or do it by hand: in Claude, open **Settings → Connectors → Add custom connector**, paste the URL above, click
-**Connect**, then **Continue** on the BonBook page. That's it. No account, no password, no API key.
+Using Claude Code instead? One line in your terminal, then `/mcp` to sign in:
 
-## What you can do
+```
+claude mcp add --transport http --scope user bonbook https://mcp.bonbook.co/mcp
+```
 
-- Search flights in plain English ("Austin AUS to LAX next Friday, back Sunday")
-- Book on a secure bonbook.co checkout page the first time; book straight from chat after that
-- See your trips, get change and cancellation quotes
-- Every booking is confirmed by email and reversible within 24 hours via support@bonbook.co
+## Want Claude to walk you through it?
+
+Paste this link into Claude and say "set up BonBook Travel for me":
+https://github.com/aSzelem/bonbook-travel/blob/main/SKILL.md
+
+## Things to say
+
+- "Austin AUS to LAX next Friday, back Sunday, 2 adults"
+- "Show me more options" · "Details on option 3"
+- "Book option 2"
+- "What trips do I have?" · "Cancel my Denver trip"
+
+Every booking is confirmed by email and reversible within 24 hours via support@bonbook.co.
 
 [Privacy](https://bonbook.co/privacy) · [Terms](https://bonbook.co/terms) · support@bonbook.co
