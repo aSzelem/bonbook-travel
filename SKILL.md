@@ -46,7 +46,7 @@ Ask one question if it isn't obvious: "Do you use Claude in the browser or deskt
 Give the person exactly these three steps, nothing more:
 
 1. Open **Settings → Connectors → Add custom connector**. Paste `https://mcp.bonbook.co/mcp` and click **Add**.
-2. Click **Connect**. A tab opens and closes by itself.
+2. Click **Connect**. A BonBook page appears for a second and closes by itself.
 3. Start a new chat and type where you want to go.
 
 Then go to **Step 3**.
@@ -63,7 +63,7 @@ Run exactly this in their terminal:
 claude mcp add --transport http --scope user bonbook https://mcp.bonbook.co/mcp
 ```
 
-Then start `claude`, type `/mcp`, choose **bonbook**, and press Enter to authenticate. A browser tab opens and closes by itself. Back in the terminal, `/mcp` should show bonbook as **connected**.
+Then start `claude`, type `/mcp`, choose **bonbook**, and press Enter to authenticate. A BonBook page appears for a second and closes by itself. Back in the terminal, `/mcp` should show bonbook as **connected**.
 
 Then go to **Step 3**.
 
