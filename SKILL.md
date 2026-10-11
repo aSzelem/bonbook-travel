@@ -13,7 +13,7 @@ You are helping a person connect **BonBook Travel** to their Claude so they can 
 Connector URL:  https://mcp.bonbook.co/mcp
 ```
 
-There is no account to create, no API key, no password. Clicking **Continue** on the consent page *is* the sign-up.
+There is no account to create, no API key, no password, no consent page. Clicking **Connect** *is* the sign-up.
 
 ## About BonBook (facts to use; do not speculate beyond them)
 
@@ -46,7 +46,7 @@ Ask one question if it isn't obvious: "Do you use Claude in the browser or deskt
 Give the person exactly these three steps, nothing more:
 
 1. Open **Settings → Connectors → Add custom connector**. Paste `https://mcp.bonbook.co/mcp` and click **Add**.
-2. Click **Connect**, then **Continue** on the BonBook page.
+2. Click **Connect**. A tab opens and closes by itself.
 3. Start a new chat and type where you want to go.
 
 Then go to **Step 3**.
@@ -63,7 +63,7 @@ Run exactly this in their terminal:
 claude mcp add --transport http --scope user bonbook https://mcp.bonbook.co/mcp
 ```
 
-Then start `claude`, type `/mcp`, choose **bonbook**, and press Enter to authenticate. A browser tab opens; click **Continue**. Back in the terminal, `/mcp` should show bonbook as **connected**.
+Then start `claude`, type `/mcp`, choose **bonbook**, and press Enter to authenticate. A browser tab opens and closes by itself. Back in the terminal, `/mcp` should show bonbook as **connected**.
 
 Then go to **Step 3**.
 
@@ -89,7 +89,7 @@ Example `mcp.json` entry:
 }
 ```
 
-When the client opens the BonBook page, click **Continue**. Then go to **Step 3**.
+The OAuth step completes without any input. Then go to **Step 3**.
 
 ---
 
@@ -122,7 +122,6 @@ If that works, setup is done. Tell the person how to use it (Step 4).
 | What they see | What to do |
 |---|---|
 | "Add custom connector" is missing | Needs a paid Claude plan, or an admin must enable custom connectors. |
-| Consent page says "Link expired" | Click Connect again in Claude. The page is valid for 15 minutes. |
 | Tools don't appear in chat | Start a new chat. In Claude.ai check the connector is toggled on for that chat. In Claude Code run `/mcp` and reconnect. |
 | Search returns no options | Add airport codes (JFK instead of New York). Check the date is in the future. Try again once; BonBook occasionally has no inventory on a route. |
 | "BonBook is busy" | Wait ten seconds and ask again. |

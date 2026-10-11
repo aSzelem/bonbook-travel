@@ -5,7 +5,7 @@ Book flights by chatting with Claude. BonBook is a licensed travel agency.
 ## Set up in 3 steps
 
 1. In Claude, open **Settings → Connectors → Add custom connector**. Paste `https://mcp.bonbook.co/mcp` and click **Add**.
-2. Click **Connect**, then **Continue** on the BonBook page.
+2. Click **Connect**. A tab opens and closes by itself.
 3. Start a new chat and type where you want to go.
 
 No account, no password, no card. Your first booking opens a bonbook.co checkout page; after that you book by saying "book option 2."
