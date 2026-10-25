@@ -1,0 +1,6 @@
+{
+  "name": "bonbook-travel",
+  "description": "Book real flights by chatting. BonBook is a licensed travel agency: search in natural language, compare ranked options, and book, change, or cancel trips — confirmed by email, reversible within 24 hours.",
+  "version": "1.0.0",
+  "author": { "name": "BonBook", "email": "support@bonbook.co", "url": "https://bonbook.co" }
+}
